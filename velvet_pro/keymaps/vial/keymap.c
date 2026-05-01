@@ -18,10 +18,6 @@ combo_t key_combos[] = {};
 tap_dance_action_t tap_dance_actions[] = {};
 #endif
 
-#if defined(KEY_OVERRIDE_ENABLE)
-const key_override_t *key_overrides[] = {};
-#endif
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [0] = LAYOUT(
@@ -36,3 +32,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
+
+const key_override_t ctrl_1_override = ko_make_basic(MOD_MASK_CS, KC_1, KC_F1);
+const key_override_t ctrl_2_override = ko_make_basic(MOD_MASK_CS, KC_2, KC_F2);
+const key_override_t ctrl_3_override = ko_make_basic(MOD_MASK_CS, KC_3, KC_F3);
+const key_override_t ctrl_4_override = ko_make_basic(MOD_MASK_CS, KC_4, KC_F4);
+const key_override_t ctrl_5_override = ko_make_basic(MOD_MASK_CS, KC_5, KC_F5);
+const key_override_t ctrl_6_override = ko_make_basic(MOD_MASK_CS, KC_6, KC_F6);
+const key_override_t ctrl_7_override = ko_make_basic(MOD_MASK_CS, KC_7, KC_F7);
+const key_override_t ctrl_8_override = ko_make_basic(MOD_MASK_CS, KC_8, KC_F8);
+const key_override_t ctrl_9_override = ko_make_basic(MOD_MASK_CS, KC_9, KC_F9);
+const key_override_t ctrl_0_override = ko_make_basic(MOD_MASK_CS, KC_0, KC_F10);
+const key_override_t ctrl_min_override = ko_make_basic(MOD_MASK_CS, KC_MINS, KC_F11);
+const key_override_t ctrl_eql_override = ko_make_basic(MOD_MASK_CS, KC_EQL, KC_F12);
+
+const key_override_t alt_bspc_override = ko_make_basic(MOD_MASK_ALT, KC_BSPC, KC_DEL);
+
+const key_override_t *key_overrides[] = {
+    &ctrl_1_override,
+    &ctrl_2_override,
+    &ctrl_3_override,
+    &ctrl_4_override,
+    &ctrl_5_override,
+    &ctrl_6_override,
+    &ctrl_7_override,
+    &ctrl_8_override,
+    &ctrl_9_override,
+    &ctrl_0_override,
+    &ctrl_min_override,
+    &ctrl_eql_override,
+    &alt_bspc_override,
+    NULL // Terminate the array (Required)
+};

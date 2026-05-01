@@ -35,6 +35,8 @@
 #define VIAL_UNLOCK_COMBO_ROWS { 0, 4 }
 #define VIAL_UNLOCK_COMBO_COLS { 0, 13 }
 
+#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS
 
 // ── DEBOUNCE TIME (#27) ───────────────────────────────────────────
 // Algorithm is set via DEBOUNCE_TYPE in rules.mk.
