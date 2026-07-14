@@ -9,8 +9,8 @@ If you don't need to change anything, use the pre-compiled `velvet_pro_firmware_
 1. Download [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases).
 2. Open QMK Toolbox, click 'Open' and open the `velvet_pro_firmware_via.bin` file
 3. Plug in the PCB while holding ESC, or the BOOT button on the back. A yellow message like 'STM32 DFU device connected (WinUSB): STMicroelectronics STM32  BOOTLOADER' should appear.
-4. CLick 'Flash' and wait for it to complete.
-5. Once flashed, see "After flashing" below to get set up in VIA.
+4. Click 'Flash' and wait for it to complete.
+5. Once flashed, see 'After flashing' below to get set up in VIA.
 
 ## Option 2: Build it yourself
 
