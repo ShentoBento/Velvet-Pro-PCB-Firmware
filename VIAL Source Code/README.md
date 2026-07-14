@@ -2,14 +2,15 @@
 
 This is the Vial-compatible firmware for the Velvet Pro PCB.
 
-## Option 1: Just flash it
+## Option 1: Just flash it (recommended)
 
-If you don't need to change anything, use the pre-built `velvet_pro_firmware_vial.bin` in this repo — no compiling required.
+If you don't need to change anything, use the pre-compiled `velvet_pro_firmware_vial.bin`
 
 1. Download [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases).
-2. Put your keyboard into bootloader mode (your board's reset method — physical button or key combo).
-3. Open QMK Toolbox, select `velvet_pro_firmware_vial.bin`, and click **Flash**.
-4. Once flashed, install [Vial](https://get.vial.today) to customize your keymap any time — no more flashing needed after this.
+2. Open QMK Toolbox, click 'Open' and open the `velvet_pro_firmware_vial.bin` file
+3. Plug in the PCB while holding ESC, or the BOOT button on the back. A yellow message like 'STM32 DFU device connected (WinUSB): STMicroelectronics STM32  BOOTLOADER' should appear.
+4. CLick 'Flash' and wait for it to complete.
+5. Once flashed, customize the mapping in [Vial](https://vial.rocks/)
 
 ## Option 2: Build it yourself
 
@@ -17,7 +18,7 @@ Want to edit the keymap before flashing? Compile it from source.
 
 ### Windows
 
-1. Install [QMK MSYS](https://msys.qmk.fm/) and open the **QMK MSYS** terminal from the Start Menu.
+1. Install [QMK MSYS](https://msys.qmk.fm/) and open the **QMK MSYS** terminal from the Start Menu. Paste the following commands in each step:
 2. Clone vial-qmk:
    ```
    git clone https://github.com/vial-kb/vial-qmk.git
@@ -71,4 +72,4 @@ Want to edit the keymap before flashing? Compile it from source.
 
 ## After flashing
 
-Open [Vial](https://get.vial.today) — it will detect your keyboard automatically. From there you can remap keys, set up macros, and more, all without reflashing.
+Open [Vial](https://vial.rocks/) — it will detect your keyboard automatically. From there you can remap keys, set up macros, and more, all without reflashing.
