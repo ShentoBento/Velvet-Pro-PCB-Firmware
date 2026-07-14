@@ -72,7 +72,7 @@ Want to edit the keymap before flashing? Compile it from source.
 
 ## After flashing
 
-Go to [usevia.app](https://usevia.app) in a Chromium-based browser (Chrome, Edge, Brave — Firefox and Safari don't support the WebHID connection VIA needs). Velvet Pro isn't in VIA's official keyboard database, so there's one extra one-time step before it's recognized:
+Go to [usevia.app](https://usevia.app) in a Chromium-based browser (Chrome, Edge, Brave — Firefox and Safari don't support the WebHID connection VIA needs). This firmware isn't in VIA's official keyboard database, so there's one extra one-time step before it's recognized:
 
 1. Click the gear icon (Settings) → toggle **Show Design Tab** on.
 2. Go to the Design tab (brush icon) → **Load Draft Definition** → select `velvet_pro_via.json` (included in this repo).
